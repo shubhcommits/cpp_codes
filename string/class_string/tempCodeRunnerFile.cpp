@@ -1,0 +1,1 @@
+    // cout<<s.find_first_of('o',3);

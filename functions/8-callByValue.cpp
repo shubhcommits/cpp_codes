@@ -5,7 +5,7 @@ using namespace std;
     temp =a;
     a=b;
     b=temp;
-    cout<<a<<" "<<b<<endl;
+    cout<<a<<" "<<b<<endl;  // callByValue mechanism ids used when you want only to return something in the formal function
 }
 int main(){
     int x,y;

@@ -13,9 +13,9 @@ class Rectangle{
             length = 1;
         }
     }
-    void setBreadth(int l){
-        if(l>=0){
-            breadth =l;
+    void setBreadth(int b){
+        if(b>=0){
+            breadth =b;
         }
         else{
             breadth = 1;

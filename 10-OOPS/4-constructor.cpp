@@ -49,4 +49,5 @@ int main(){
    Rectangle r1(10,5);
    Rectangle r2(r1);
    cout<<"Area is "<<r2.area()<<endl;
+   return 0;
 }

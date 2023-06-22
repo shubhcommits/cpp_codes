@@ -26,6 +26,15 @@ int secondLargest( int arr[],int n){
     }
     return secondLargest;
 }
+int HCF(int m,int k){
+    if(m>k){
+    int temp;
+    temp = m;
+    m=k;
+    k=temp;
+    return m;
+}
+}
 int main(){
     int n,m,k,hcf;
     cout<<"Enter length of array"<<endl;
@@ -41,12 +50,7 @@ int main(){
     m=arr[Largest(arr,n)];
     k=arr[secondLargest(arr,n)];
     cout<<m<<" "<<k<<endl;
-    if(m>k){
-    int temp;
-    temp = m;
-    m=k;
-    k=temp;
-}
+    HCF(m,k);
     for(int i=1;i<=m;i++){
         if(m%i==0 && k%i==0){
             hcf = i;

@@ -1,4 +1,5 @@
 // To find first and second largest element in an array
+// After that find the gcd of that two largest number in array
 #include<iostream>
 using namespace std;
 int Largest(int arr[],int n){
@@ -26,7 +27,7 @@ int secondLargest( int arr[],int n){
     return secondLargest;
 }
 int main(){
-    int n,k;
+    int n,m,k,hcf;
     cout<<"Enter length of array"<<endl;
     cin>>n;
     int arr[n];
@@ -37,5 +38,20 @@ int main(){
     cout<<endl;
     // cout<<Largest(arr,n);
     // cout<<arr[secondLargest(arr,n)];
-    cout<<arr[Largest(arr,n)]<<" "<<arr[secondLargest(arr,n)];
+    m=arr[Largest(arr,n)];
+    k=arr[secondLargest(arr,n)];
+    cout<<m<<" "<<k<<endl;
+    if(m>k){
+    int temp;
+    temp = m;
+    m=k;
+    k=temp;
+}
+    for(int i=1;i<=m;i++){
+        if(m%i==0 && k%i==0){
+            hcf = i;
+        }
+    }
+    cout<<hcf;
+    return 0;
 }

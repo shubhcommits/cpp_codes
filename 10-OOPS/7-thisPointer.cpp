@@ -6,7 +6,7 @@ class Rectangle {
     int breadth;
     public:
     Rectangle(int length,int breadth){
-        this->length = length;
+        this->length = length;   // this is to refer to data member of same object this pointer is used
         this->breadth = breadth;
     }
     int area(){

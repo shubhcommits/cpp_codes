@@ -10,6 +10,15 @@ class Complex{
     //     real = r;
     //     img = i;
     // }
+    /*
+    Complex add(Complex x){  // here add can be interchange with operator+ which results
+    // ...we can write direct C3 = c1+c2
+        Complex temp;
+        temp.real = real+x.real;
+        temp.img = img+x.img;
+        return temp;
+    }
+    */
     Complex operator+(Complex x){  
         Complex temp;
         temp.real = real+x.real;

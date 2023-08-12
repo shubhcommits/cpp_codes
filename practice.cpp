@@ -4,7 +4,7 @@ class Complex{
     public:
     int img;
     int real;
-    Complex add(Complex x){
+    Complex operator+(Complex x){
         Complex temp;
         temp.real = real+x.real;
         temp.img = img+x.img;
@@ -17,7 +17,7 @@ int main(){
     c1.img = 3;
     c2.real = 7;
     c2.img = 15;
-    c3=c1.add(c2);
+    c3=c1+c2;
     cout<<c3.real<<"+"<<c3.img<<endl;
     return 0;
 }

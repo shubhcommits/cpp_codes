@@ -5,17 +5,23 @@ class Rectangle{
     int length;
     int breadth;
     public :
+    // this is an non paramaterized constructor
     /*
-    Rectangle(){
-        length = 1;
-        breadth = 1;
+    // a constructor is a function which will have same name as class name
+    they will not have any return type it has same name as class name
+    Rectangle(){     
+        length = 0;
+        breadth = 0;
     }
     */
-    Rectangle(int l=1,int b=1){
+   // this is an paramaterized constructor
+    Rectangle(int l=0,int b=0){      
+    // by giving value =0 this willact as both non paramaterized and paramaterized constructor
         setLength(l);
         setBreadth(b);
     }
-    Rectangle(Rectangle &r){
+    // this is an copy constructor
+    Rectangle(Rectangle &r){    
         length = r.length;
         breadth = r.breadth;
     }
@@ -48,6 +54,8 @@ class Rectangle{
 int main(){
    Rectangle r1(10,5);
    Rectangle r2(r1);
-   cout<<"Area is "<<r2.area()<<endl;
+   cout<<"Area is "<<r1.area()<<endl;
+   // here r2 copied data from r1
+   cout<<"Area is "<<r2.area()<<endl;  
    return 0;
 }

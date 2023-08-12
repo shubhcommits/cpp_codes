@@ -10,7 +10,7 @@ class Complex{
     //     real = r;
     //     img = i;
     // }
-    Complex operator+(Complex x){
+    Complex operator+(Complex x){  
         Complex temp;
         temp.real = real+x.real;
         temp.img = img+x.img;

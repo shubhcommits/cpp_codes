@@ -1,11 +1,14 @@
 #include<iostream>
 using namespace std;
 class Rectangle{
-    private :
+    // we have made members which contain data as private
+    private :    
     int length;
     int breadth;
+    // and made the functions as public
     public :
-    void setLength(int l){
+    // we make these functions intelligent to check the data what is given   
+    void setLength(int l){   // to  use mutator we have to write setSOMETHING...SET IS USED
         if(l>=0){
             length =l;
         }
@@ -13,7 +16,8 @@ class Rectangle{
             length = 1;
         }
     }
-    void setBreadth(int b){
+    // here setBreadth is mutator
+    void setBreadth(int b){   
         if(b>=0){
             breadth =b;
         }
@@ -21,10 +25,12 @@ class Rectangle{
             breadth = 1;
         }
     }
-    int getLength(){
+    // here getLength is accesor
+    int getLength(){    
         return length;
     }
-    int getBreadth(){
+     // here getBreadth is accesor...
+    int getBreadth(){  
         return breadth;
     }
     int area(){
@@ -36,5 +42,9 @@ int main(){
     r.setLength(10);
     r.setBreadth(5);
     cout<<r.area()<<endl;
-    cout<<"Length is "<<r.getLength();
+    // to get what is the length is given...
+    cout<<"Length is "<<r.getLength();  
 }
+      // get will give the value of the data member___this is called as ACCESSOR
+      // set wil set the value of the data member___this is called as MUTATOR
+      // together accessor and mutator is called as property of function    

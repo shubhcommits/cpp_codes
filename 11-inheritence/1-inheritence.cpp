@@ -7,7 +7,7 @@ class base{
         cout<<x<<endl;
     }
 };
-class derived : public base {
+class derived : public base {   // by this we can access data of base class by derived
     public:
     int y;
     void dispaly(){
@@ -18,7 +18,7 @@ int main(){
     // base b;
     // b.x = 25;
     // b.show();
-    derived d;
+    derived d; 
     d.x=5;
     d.y=6;
     d.show();

@@ -24,8 +24,8 @@ class Cuboid : public Rectangle{
         height = h;
     }
     int getHeight(){return height;}
-    int setHeigtht(int h){height = h;}
-    int volume(){return getLength()*getbreadth()*getHeight();}
+    int setHeight(int h){height = h;}
+    int volume(){return getLength()*getbreadth()*height;}
 
 };
 void  Rectangle::setLength(int l){
@@ -48,7 +48,7 @@ int Rectangle::perimeter(){
 }
 int main(){
     Cuboid c(5);
-    c.setLength(6);
-    c.setBreadth(7);
+    c.setLength(10);
+    c.setBreadth(5);
     cout<<c.volume()<<endl;
 }

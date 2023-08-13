@@ -3,28 +3,28 @@ using namespace std;
 class Base{
     public:
     Base(){
-        cout<<"default of base"<<endl;
+        cout<<"Defaut of Base"<<endl;
     }
     Base(int x){
-        cout<<"Parameter of Base "<<x<<endl;
+        cout<<"Constructor of Base"<<endl;
+    }
+    Base(int x,int y){
+        cout<<"Constructor of Base"<<endl;
     }
 };
-class Derived : Base{
+class derived:public Base{
     public:
-    Derived(){
-        cout<<"default of derived";
+    derived(){
+        cout<<"Default of derived"<<endl;
     }
-    // Derived(int a){
-    //     cout<<"Parameter of Derivved"<<a<<endl;
-    // }
-    Derived(int x,int a):Base(x){
-        cout<<"Parameter of Derived "<<a<<endl;
+    derived(int x){
+        cout<<"Constructor of derived"<<endl;
+    }
+     derived(int x,int y):Base(x){   // Here  :Base is  
+     // used to call constructor of base
+        cout<<"Constructor of derived"<<endl;
     }
 };
 int main(){
-    // Derived d;
-    // Derived d(10);
-    Derived d(10,20);
-    // first default of Base wil be executed
-    // after base default dERIVED DEFAULT WILL EXECUTED 
+    derived c(10,5);
 }

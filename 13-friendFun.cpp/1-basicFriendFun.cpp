@@ -17,3 +17,4 @@ int main(){
    t.b=20;  // this is now accessible because class friend function is declared
     t.c=30;
 }
+// friend function id a global funcyion outside function which can access all items of class upon object

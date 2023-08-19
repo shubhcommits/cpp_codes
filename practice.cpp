@@ -1,30 +1,34 @@
 #include<iostream>
 using namespace std;
-class Base{
+class Student{
     public:
-    Base(){
-        cout<<"Defaut of Base"<<endl;
+    // initialing public integers
+    int rollNo;
+    string name;
+    // making static data member
+    static int admissionNo;
+    // making an constructor
+    Student(string n){
+        admissionNo++;
+        rollNo=admissionNo;
+        name=n;
     }
-    Base(int x){
-        cout<<"Constructor of Base"<<endl;
-    }
-    Base(int x,int y){
-        cout<<"Constructor of Base"<<endl;
+    // Here we initialise a display function to display 
+    void display(){
+        cout<<"Name "<<name<<endl<<"Roll No "<<rollNo<<endl;
     }
 };
-class derived:public Base{
-    public:
-    derived(){
-        cout<<"Default of derived"<<endl;
-    }
-    derived(int x){
-        cout<<"Constructor of derived"<<endl;
-    }
-     derived(int x,int y):Base(x){   // Here  :Base is  
-     // used to call constructor of base
-        cout<<"Constructor of derived"<<endl;
-    }
-};
+// initialising the value of static data member
+int Student::admissionNo=0;
 int main(){
-    derived c(10,5);
+    int n;
+    string nam;
+    cout<<"Enter no of student for admission"<<endl;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cout<<"Enter name of student -> "<<endl;
+        cin>>nam;
+        Student n(nam);
+        n.display();
+    }
 }

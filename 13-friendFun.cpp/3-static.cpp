@@ -17,6 +17,7 @@ int Test::count=0;
 int main(){
     Test t1;
     Test t2;
+    // Lower three lines gives same message as same static data member access by all
     cout<<t1.count<<endl;
     cout<<t2.count<<endl;  // static data member can be access by objects
     cout<<Test::count;  // static data member can be access by class

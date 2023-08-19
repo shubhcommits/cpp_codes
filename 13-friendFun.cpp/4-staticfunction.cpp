@@ -26,4 +26,4 @@ int main(){
 }
 int Test::count=0;
 
-// by declaring static member function SINGLE DATA MEMBER or static function can be access by different objeecta
+// by declaring static member function SINGLE DATA MEMBER or static function can be access by different objects

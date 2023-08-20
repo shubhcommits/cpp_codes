@@ -1,3 +1,5 @@
+/* a constructor is a function which will have same name as class name
+    they will not have any return type it has same name as class name*/
 #include<iostream>
 using namespace std;
 class Rectangle{
@@ -7,17 +9,15 @@ class Rectangle{
     public :
     // this is an non paramaterized constructor
     /*
-    // a constructor is a function which will have same name as class name
-    they will not have any return type it has same name as class name
     Rectangle(){     
         length = 0;
         breadth = 0;
     }
     */
    // this is an paramaterized constructor
-    Rectangle(int l=0,int b=0){      
-    // by giving value =0 this willact as both non paramaterized and paramaterized constructor
-        setLength(l);
+    Rectangle(int l=0,int b=0){
+    // by giving value =0 this will act as both non paramaterized and paramaterized constructor
+        setLength(l);  // something made private then this will access by set something
         setBreadth(b);
     }
     // this is an copy constructor

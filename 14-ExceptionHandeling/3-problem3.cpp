@@ -1,11 +1,5 @@
 #include<iostream>
 using namespace std;
-class MyException1:exception{
-
-};
-class MyException2:public MyException1{  // this class inheriting from my exception1
-
-};
 int main(){
     try{
         // throw 1.5;  // this is double

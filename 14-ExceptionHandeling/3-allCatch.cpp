@@ -15,7 +15,8 @@ int main(){
     // catch(char e){  // this is catch of type char
     //     cout<<"Char catch";
     // } 
-    catch(...){  // this can be used for any type of throw
+    catch(...){  // this is called ellipse
+        // this can be used for any type of throw
     // this is should be ignored and individiual catch should be created for giving exact error
         cout<<"All catch";
     }

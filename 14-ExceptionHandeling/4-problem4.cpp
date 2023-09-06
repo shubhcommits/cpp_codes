@@ -10,7 +10,7 @@ int main(){
     try{
         throw MyException1();
     }
-    catch(MyException2 e){  // frst child class error should executed
+    catch(MyException2 e){  // first child class error should executed
         cout<<"This is MyException1 error";
     }
     catch(MyException1 e){

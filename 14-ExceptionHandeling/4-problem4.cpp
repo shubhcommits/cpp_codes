@@ -20,3 +20,5 @@ int main(){
         cout<<"catch all handler";  // catch all handler must come at last
     }
 }
+
+// child class catch block must be written before parent class catch block

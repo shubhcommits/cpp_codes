@@ -30,3 +30,11 @@ int main(){
         cout<<x;
     }
 } 
+
+// erase function
+// {10,20,12,23}
+// ve.erase(v.begin()+1);  // this will erase 20 as v.begin() point to 10
+
+// to delete in a range
+// {11,25,33,55,66,22}
+// v.erase(v.begin()+2,v.begin()+4);   // {11,25,66,22} (start,end) end is not included
